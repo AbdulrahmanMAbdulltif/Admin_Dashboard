@@ -5,15 +5,22 @@
 header{
     display: flex;
     flex-direction: row;
-    
+
 }
 .headerPart1{
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: aqua;
+    font-weight: bold;
+    color: white;
     padding-left: 10px;
     padding-right: 20px;
+    height: 100vh; /* 100% of the viewport height */
+
+}
+.navbarP1{
+    margin-top: 5rem;
 }
 .navbarP2{
     margin-top: 1rem;
@@ -29,6 +36,8 @@ li{
     padding-top: 20px;
     padding-right: 10px;
     flex-grow:2;
+    min-height: 50px; /* Set the minimum height */
+    max-height: 200px; /* Set the maximum height */
 }
 .row1{
     display: flex;
@@ -62,6 +71,7 @@ li{
     width: 5rem;
     height: 2rem;
     border: none;
+    margin-right: 1rem;
 }
 
 
