@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;
 }
-header{
+.container{
     display: flex;
     flex-direction: row;
-
 }
-.headerPart1{
+main{
+    flex-grow: 1;
+    background-color: #FAFAFA;
+}
 
+.headerPart1{
     display: flex;
     flex-direction: column;
     background-color: aqua;
@@ -17,10 +20,11 @@ header{
     padding-left: 10px;
     padding-right: 20px;
     height: 100vh; /* 100% of the viewport height */
-
+    flex-grow: 0.1;
+    font-size: 1.5rem;
 }
 .navbarP1{
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 .navbarP2{
     margin-top: 1rem;
@@ -35,23 +39,33 @@ li{
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 10px;
-    flex-grow:2;
-    min-height: 50px; /* Set the minimum height */
-    max-height: 200px; /* Set the maximum height */
+    border-color: lightgray;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    height: auto;
+    background-color: white;
+   
 }
 .row1{
     display: flex;
     justify-content: space-around;
 }
 .textInput{ 
-    width: 50%;
+    width: 30rem;
     border-radius: 1rem;
+    height: 2rem;
+    
+}
+.inputD{
+    display: flex;
+    align-items: center;
 }
 
 .figureH{
-    padding-right: 30px;
     display: flex;
-    height: 2rem;
+    height: auto;
     align-items: center;
 }
 .icon{
@@ -60,10 +74,11 @@ li{
     margin-right: 10px;
 }
 .row2{
-    margin-top: 30px;
+    margin-top: 4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 1rem;
 }
 .buttonR{
     border-radius: 1rem;
@@ -73,5 +88,153 @@ li{
     border: none;
     margin-right: 1rem;
 }
+.searchItem{
+    width: 2.5rem;
+    border-radius: 2rem;
+    height: auto;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 950px; /* Adjust max-width as needed */
+    margin-left: 10px;
+}
+
+.card {
+    width: 260px; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    background-color: white;
+    flex-direction: column;
+    padding: 10px;
+}
+.projectName{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.cardTitle{
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+.cardText{
+    font-size: 15px;
+    width: 14rem;
+}
+
+.largecontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.headTitle{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+@media (max-width: 1440px) and (max-height: 952px) {
+    .card-container {
+        max-width: 660px; /* Adjust max-width as needed */
+    }
+    
+}
+@media (max-width: 1024px) and (max-height: 952px) {
+    .card-container {
+        width: 350px; /* Adjust max-width as needed */
+    }
+    .row2{
+        
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1rem;
+        align-items: center;
+    }
+    .row1{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icon{
+        width: 9%;
+    }
+    .buttons{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .headerPart1{
+        padding: 0;
+        align-items: center;
+        height:auto;
+    }
+    .navbarP1{
+        padding-left: 50px;
+    }
+    .headTitle{
+        padding-right: 10px;
+    }
+    .headerPart2{
+        justify-content: center;
+        align-items: center;
+    }
+    .figureH{
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .largecontainer{
+        
+        justify-content: center;
+    }
+    
+}
+    @media (max-width: 425px) and (max-height: 952px) {
+        .card-container {
+            max-width: 300px; /* Adjust max-width as needed */
+        }
+
+        .largecontainer{
+            flex-direction: column;
+        }
+
+        .textInput{ 
+            width: 18rem;
+        }
+        .leftMain{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .rightMain{
+            
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .projectName{
+            padding-left: 3rem;
+        }
+    }
+
+    @media (max-width: 320px) and (max-height: 952px) {
+
+        .textInput{ 
+            width: 14rem;
+        }
+        .buttonR{
+            width: 4rem;
+        }
+    }
+    
+
 
 
